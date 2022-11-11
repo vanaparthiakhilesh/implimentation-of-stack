@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+void push(){
+int val;
+struct node*ptr=(struct node*)malloc(size of(struct node));
+if(ptr==null){
+printf("not able to push the elements");
+}else{
+int val;
+printf("enter the value");
+scanf("%d",&val);
+if(head==null){
+ptr->val=val;
+ptr->next=null;
+head=ptr;
+}else{
+ptr->val=val;
+ptr->next=head
+head=ptr;
+}
+printf("item pushed");
+}
+void pop(){
+int item;
+struct node*ptr;
+if(head==null){
+printf("under flow");
+}else{
+item=head->val;
+ptr=head;
+head=head->next;
+free(ptr);
+printf("itempopped");
+}}
+void display(){
+int i;  
+struct node *ptr;  
+ptr=head;  
+if(ptr == NULL){  
+printf("Stack is empty\n");  
+}else{
+printf("Printing Stack elements \n");  
+while(ptr!=NULL){  
+printf("%d\n",ptr->val); 
+ptr = ptr->next;  
+}}}  
+int main(){
+push();
+pop();
+display();
+return 0;
+}
